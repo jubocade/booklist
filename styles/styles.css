@@ -1,0 +1,52 @@
+.wrapper h1 {
+    text-align: center;
+    color: #09C41A;
+}
+.wrapper form > div input, .book-submit {
+    display: block;
+}
+
+.wrapper form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 250px;
+}
+
+.wrapper form > div label {
+    font-size: 18px;
+}
+
+.wrapper form > div input, .book-submit {
+    width: 500px;
+    height: 30px;
+    font-size: 16px;
+    padding-left: 5px;
+    outline: none;
+}
+
+.book-submit {
+    background-color: #09C41A;
+    color: white;
+    border: none;
+    font-size: 18px;
+}
+
+.wrapper form > div input:focus, .book-submit:focus {
+    border: 2px solid #09C41A;
+}
+
+.wrapper table {
+    margin: auto;
+    margin-top: 15px;
+    width: 500px;
+}
+
+@media(max-width: 512px) {
+    .wrapper form > div input, .book-submit, .wrapper table {
+        width: 95%
+    }
+}
+
